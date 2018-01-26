@@ -11,4 +11,3 @@ import notification
 # tapnuti na notifikaci se spusti Pythonista.
 #
 notification.schedule('Mrkni co je nového na iPure.cz', delay=5)
-

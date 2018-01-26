@@ -12,4 +12,3 @@ import notification
 # Safari s odkazem http://www.ipure.cz/
 #
 notification.schedule('Mrkni co je nového na iPure.cz', delay=5, action_url='http://www.ipure.cz/')
-
