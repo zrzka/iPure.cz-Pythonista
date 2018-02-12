@@ -59,6 +59,9 @@ def alert(title):
 
 def get_user_input():
     """Vraci slovnik se vstupnima udajema nebo None v pripade zavreni dialogu.
+
+    Klice slovniku jsou primo pouzitelne ve funkci notification.schedule. Tj.
+    slovnik obsahuje message, delay a action_url.
     """
 
     input = None
