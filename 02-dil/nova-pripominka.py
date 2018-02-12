@@ -47,14 +47,14 @@ def fields_with_previous_input(input):
     ]
 
 
-def alert(title):
-    """Zobrazi dialog s textem a tlacitkem OK.
+def alert(message):
+    """Zobrazi varovný dialog s textem a tlacitkem OK.
 
     Arguments:
-        title (str): Varovna zprava.
+        message (str): Varovna zprava.
     """
 
-    dialogs.alert(title, button1='OK', hide_cancel_button=True)
+    dialogs.alert('Chybné údaje', message, button1='OK', hide_cancel_button=True)
 
 
 def get_user_input():
