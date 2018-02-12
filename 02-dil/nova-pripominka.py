@@ -20,7 +20,7 @@ _FIELDS = (
     },
     {
         'type': 'url',
-        'key': 'action',
+        'key': 'action_url',
         'title': 'Akce',
         'placeholder': 'URL, ...'
     }
@@ -89,9 +89,9 @@ def get_user_input():
             continue
 
         # Pokud nezadal akci, zkonvertujeme na None
-        action = input['action'].strip() or None
+        action_url = input['action_url'].strip() or None
 
-        return dict(message=message, delay=delay, action_url=action)
+        return dict(message=message, delay=delay, action_url=action_url)
 
 
 def main():
