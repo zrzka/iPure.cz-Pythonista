@@ -82,10 +82,10 @@ def get_user_input():
 
         # Validace data & casu zobrazeni
         delta = input['date'] - datetime.datetime.now()
-        delay = delta.seconds
+        delay = delta.days * 24 * 60 * 60 + delta.seconds
 
         if delay < 60:
-            alert('Čas upozornění musí nastat nejdříve za minutue.')
+            alert('Čas upozornění musí nastat nejdříve za minutu.')
             continue
 
         # Pokud nezadal akci, zkonvertujeme na None
